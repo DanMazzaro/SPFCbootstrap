@@ -1,0 +1,109 @@
+
+/* Estilização própria do site.
+   As classes e os componentes do Bootstrap estão no arquivo index.html. */
+
+/* Paleta de cores: vermelho, branco e preto */
+:root {
+    --spfc-red: #d71920;
+    --spfc-black: #111111;
+    --spfc-white: #ffffff;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: var(--spfc-black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+h2{
+    color: #d71920;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main > p {
+    margin-bottom: 25px;
+}
+
+/* Navbar */
+.spfc-navbar {
+    background-color: var(--spfc-black);
+    border-bottom: 4px solid var(--spfc-red);
+}
+
+/* Títulos */
+.spfc-text-red {
+    color: var(--spfc-red) !important;
+}
+
+/* Alerta */
+.spfc-alert {
+    color: var(--spfc-black);
+    background-color: var(--spfc-white);
+    border: 1px solid var(--spfc-red);
+    border-left: 5px solid var(--spfc-red);
+}
+
+/* Botão vermelho */
+.spfc-btn {
+    color: var(--spfc-white);
+    background-color: var(--spfc-red);
+    border-color: var(--spfc-red);
+}
+
+.spfc-btn:hover {
+    color: var(--spfc-white);
+    background-color: #a91017;
+    border-color: #a91017;
+}
+
+/* Botão com contorno */
+.spfc-btn-outline {
+    color: var(--spfc-red);
+    border-color: var(--spfc-red);
+}
+
+.spfc-btn-outline:hover {
+    color: var(--spfc-white);
+    background-color: var(--spfc-red);
+    border-color: var(--spfc-red);
+}
+
+/* Cards */
+.card {
+    border: 1px solid #d5d5d5;
+    border-top: 4px solid var(--spfc-red);
+}
+
+.card-title {
+    color: var(--spfc-black);
+}
+
+.card img {
+    height: 190px;
+    object-fit: cover;
+}
+
+/* Carousel */
+.carousel img {
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Rodapé */
+.spfc-footer {
+    margin-top: 40px;
+    background-color: var(--spfc-black);
+    border-top: 4px solid var(--spfc-red);
+}
+
+/* Ajuste para celulares */
+@media (max-width: 576px) {
+    .carousel img {
+        height: 220px;
+    }
+}
